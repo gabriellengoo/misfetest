@@ -118,9 +118,7 @@ export default function MiserySite({ posts }) {
             &#8679;
             </button>
       )}
-  
-      {/* <Footer></Footer>  */}
-      {/* <FooterComponent></FooterComponent> */}
+
 
   
       </Layout>
