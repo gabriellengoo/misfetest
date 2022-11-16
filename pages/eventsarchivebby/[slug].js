@@ -9,7 +9,7 @@ import Image from "../../components/Image";
 import Router from 'next/router'
 import CarouselComponent from "../../components/carousel";
 import Head from 'next/head';
-import'img-previewer/dist/index.css'
+// import'img-previewer/dist/index.css'
 
 
 

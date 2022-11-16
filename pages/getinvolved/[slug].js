@@ -7,10 +7,7 @@ import { Toolbar } from '../../components/toolbar';
 import { sanityClient } from '@sanity/client'
 // import Image from "../../components/Image"
 import Link from "next/link"
-// import Footer from '../../components/Footer';
-import FooterComponent from '../../components/foottest';
 import Head from 'next/head';
-import { SectionTitle } from "../../components/SectionTitle";
 import Footer from '../../components/Footer';
 
 export const getin = ({ title, body, bodytwo,

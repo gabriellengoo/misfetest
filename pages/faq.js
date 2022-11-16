@@ -4,8 +4,6 @@ import Link from "next/dist/client/link";
 import Head from 'next/head';
 import { Toolbar } from '../components/toolbar';
 // import Footer from '../components/Footer';
-import FooterComponent from '../components/foottest';
-import Marquee from "react-fast-marquee";
 import Footer from '../components/Footer';
 
 export default function Index() {
