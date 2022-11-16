@@ -5,7 +5,7 @@ import Typography from '@mui/material/Typography'
 import Box from "@mui/material/Box";
 import Divider from '@mui/material/Divider';
 import { Facebook, Instagram, Twitter } from "@mui/icons-material";
-import MuiNextLink from "./MuiNextLink"
+import MuiNextLink from "./MuiNextLink" 
 import TextField from '@mui/material/TextField';
 
 function FooterComponent() {    
