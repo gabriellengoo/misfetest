@@ -9,7 +9,6 @@ import { sanityClient } from '@sanity/client'
 import Link from "next/link"
 import Footer from '../../components/Footer';
 import Head from 'next/head';
-import { SectionTitle } from "../../components/SectionTitle";
 import CarouselComponent from "../../components/carousel";
 
 export const eventsMiseryMoods = ({ name, phonetextsupport, inperson, communitiesUk, communitiesGlobal, housing, images }) => {
@@ -86,8 +85,8 @@ misery has 5 main strands of work and we dip into, enrich and expand each one de
             <div className={styles.links}>
         <div className="  text-3xl tracking-wide px-0 ">
       <div className="  ">
-<Link  href="#miseryparty"><a className=''>☆ misery party ☆</a></Link>
-<Link href="#miserymoves"><a className=''>☆ misery moves ☆</a></Link>
+<Link  href="#miseryparty">☆ misery party ☆</Link>
+<Link href="#miserymoves">☆ misery moves ☆</Link>
 <div></div>
 </div>
 </div>
@@ -98,11 +97,11 @@ misery has 5 main strands of work and we dip into, enrich and expand each one de
         <div className="  text-3xl tracking-wide px-0 ">
       <div className="  ">
 <div></div>
-<Link href="#miserymeets"><a className=''>☆ misery meets ☆</a></Link>
+<Link href="#miserymeets">☆ misery meets ☆</Link>
 
-<Link href="#miserymedicine"><a className=''>☆ misery medicine ☆</a></Link>
+<Link href="#miserymedicine">☆ misery medicine ☆</Link>
 <div></div>
-<Link href="#miserymakes"><a className=''>☆ misery makes ☆</a></Link>
+<Link href="#miserymakes">☆ misery makes ☆</Link>
 </div>
 </div>
 </div>
@@ -173,7 +172,7 @@ misery has 5 main strands of work and we dip into, enrich and expand each one de
       </div>
 
 
-      <Footer></Footer> 
+      {/* <Footer></Footer>  */}
     </div>
   );
 };

@@ -41,10 +41,8 @@ export const Crisisp = ({ title, phonetextsupport, inperson, communitiesUk, comm
 
   return (
     <div>
-             <Head>
-       {/* <script src="https://unpkg.com/react@16.12.0/umd/react.development.js"></script>
-<script src="https://unpkg.com/react-dom@16.12.0/umd/react-dom.development.js"></script> */}
-<title>crisis</title>
+      <Head>
+        <title>crisis</title>
       </Head>
       <Toolbar /> 
 
@@ -56,83 +54,7 @@ export const Crisisp = ({ title, phonetextsupport, inperson, communitiesUk, comm
 
    
       <section className=" relative hidden md:block">
-{/* <img className=" w-2/6 absolute drop-shadow-[0_0px_5px_red]" src="https://i.ibb.co/Q6g7Tk0/Masturbator-White-Thick-Transparent.png" />  */}
 
-
-
-
-  {/* <div className='flex '> */}
-
-
- {/* --------------------------------------------  right */}
- 
-
-
-    {/* <div className='float-right h-screen right-0 overflow-scroll  w-3/12 top-0 font-normal text-lg '>
-    <div className={styles.righthome}>
-          
-          <div className=' p-5  h-screen '> */}
-          
-          {/* <img className={styles.swerl} src="https://i.ibb.co/ZR9zG0V/Miserymeets09-29-Family.png" /> 
-  <img className={styles.swerl1} src="https://i.ibb.co/ZR9zG0V/Miserymeets09-29-Family.png" /> 
-  <img className={styles.swerl2} src="https://i.ibb.co/ZR9zG0V/Miserymeets09-29-Family.png" />  */}
-
-  {/* <img className={styles.logomishome} src="https://i.ibb.co/qB2YqyQ/MISERY-FAUX-FUR.png"/> */}
- 
-  
-  {/* <img className={styles.figurenew} src="https://i.ibb.co/S66hH07/MISERY-SLIME-2.png"/> */}
-  {/* <img className='flex justify-center m-auto items-center h-4/4 w-1/4  ' src="https://i.ibb.co/sFyFWsf/Bald.png"/> */}
-      {/* <img className={styles.logoa} src="https://i.ibb.co/JyJxKXh/Esther-copy-2-Glow.png"/> */}
-   
-
-          {/* /text */}
-          {/* <p className="text-left pt-10  text-base z-50 font-light ">misery is a mental health community and sober rave based in london and led by and for queer, trans, intersex, black people and people of colour (qtibpoc)
-           with lived experience of madness, mental health challenges, time in hospital, addiction, public service use, disability, trauma, medication and ...      
-           <Link  href="#whatwedo"><a className=' hover:text-[#dbff00] font-semibold p-4 m-auto items-center justify-evenly  tracking-wide"'>read more ↗</a></Link>
-           </p> */}
-
-
-{/* <div className={styles.back}>
-           <Link  href="../"><a className=''><img className={styles.back}  src="https://i.ibb.co/S66hH07/MISERY-SLIME-2.png"/></a></Link>
-           </div>
-           <p className="pt-56 text-center object-center text-base z-50 font-light ">misery is a mental health community and sober rave based in london and led by and for queer, trans, intersex, black people and people of colour (qtibpoc)
-           with lived experience of madness, mental health challenges, time in hospital, addiction, public service use, disability, trauma, medication and ...      
-           <Link  href="../../Miserysite#whatwedo"><a className=' hover:text-[#dbff00] font-semibold p-4 m-auto items-center justify-evenly  tracking-wide"'>read more ↗</a></Link>
-           </p> 
-           <div className=""><Toolbar /> </div> */}
-
-{/* links */}
-           {/* <div className=" pt-10 list-[none] text-2xl font-base   ">
-      <Link  href="#whatismisery"><a className=' hover:text-[#dbff00]'>☆ what is misery?</a></Link>
-<Link href="#whatwedo"><a className=' hover:text-[#dbff00] '>☆ what we do</a></Link>
-<Link href="#ourgoals"><a className=' hover:text-[#dbff00] '>☆ our goals</a></Link>
-<Link href="#ourroots"><a className=' hover:text-[#dbff00] '>☆ our roots</a></Link>
-<Link href="#ourdreams"><a className=' hover:text-[#dbff00] '>☆ our dreams</a></Link>
-</div> */}
-
-
-  {/* <div className=" p-5 flex bottom-0 absolute ">
-            <div className="p-5 ">
-        <MuiNextLink sx={{ textDecoration: "none", color: "common.black" }} href="https://www.instagram.com/miseryparty/?hl=en" target="_blank" rel="noopener noreferrer">
-		<Instagram fontSize="large" />
-		</MuiNextLink>
-        </div>
-        <div className=" p-5">
-        <MuiNextLink sx={{ textDecoration: "none", color: "common.black" }} href="https://twitter.com/miseryparty_" target="_blank" rel="noopener noreferrer" >
-		<Twitter fontSize="large" />
-		</MuiNextLink>
-        </div>
-        <div className=" p-5 m-auto items-center justify-evenly  tracking-wide">
-        <Link  href="./"><a className='  m-auto items-center font-light justify-evenly  tracking-wide'>© Misery 2022</a></Link>
-        </div>
-  </div> */}
-
-
-    {/* </div>
-
-    
-    </div>
-    </div> */}
 
 {/* -------------------------------------------- left */}
         <div className=' mx-auto pt-36 z-0 p-5 top-0 h-screen w-9/12 overflow-scroll'>
@@ -228,23 +150,6 @@ export const Crisisp = ({ title, phonetextsupport, inperson, communitiesUk, comm
          </div>
  </section>
 
- {/* <section className=' reletive flex p-5   px-8  z-50 '>
- <div className={styles.body}>
- <BlockContent className={styles.body} blocks={substancereduction} />
-         </div>
- </section> */}
-
- {/* <section className=' reletive flex p-5   px-8  z-50 '>
- <div className={styles.body}>
- <BlockContent className={styles.body} blocks={lgbtqiaherbalism} />
-         </div>
- </section> */}
-
- {/* <section className=' reletive flex p-5   px-8  z-50 '>
- <div className={styles.body}>
- <BlockContent className={styles.body} blocks={therapy} />
-         </div>
- </section> */}
 
  <section className=' reletive flex p-5   px-8  z-50 '>
  <div className={styles.body}>
@@ -266,10 +171,8 @@ export const Crisisp = ({ title, phonetextsupport, inperson, communitiesUk, comm
 
 
 
-        <Footer></Footer>
-        {/* <Link href="https://www.youtube.com/watch?v=5TY_VbQXlkU"><p className="text-2xl  text-center italic pt-10 font-semibold  "> WATCH: chosen family: exploring the importance of LGBTQI+ safe spaces with Aisha Mirza </p></Link> */}
-            {/* </div> */}
-            {/* <FooterComponent></FooterComponent>  */}
+        {/* <Footer></Footer> */}
+
             
   </div>
 

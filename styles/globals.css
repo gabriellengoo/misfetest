@@ -28,7 +28,15 @@ top: 0;
 left: 0;
 width: 100vw;
 height: 100vh; */
+/* a{
+  text-decoration: underline;
+} */
 
+.bodylinks li{
+  list-style: bullet;
+  text-decoration: underline !important;
+ }
+ 
 * {
     margin:0;
     padding:0;

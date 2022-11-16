@@ -13,33 +13,8 @@ import { useRouter } from 'next/router';
 // import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
 import React from 'react';
 import Layout from "../components/Layout";
-// import "react-responsive-carousel/lib/styles/carousel.min.css";
-// import Cookify from './src/index.js';
-// import CC from "CookieConsent"
 
 
-// import CookieConsent from "@klaxit/cookie-consent"
-// export default function MiserySite() {
-  
-  
-//   const [showButton, setShowButton] = useState(false);
-
-//   useEffect(() => {
-//     window.addEventListener("scroll", () => {
-//       if (window.pageYOffset > 300) {
-//         setShowButton(true);
-//       } else {
-//         setShowButton(false);
-//       }
-//     });
-//   }, []);
-
-//   const scrollToTop = () => {
-//     window.scrollTo({
-//       top: 0,
-//       behavior: 'smooth' 
-//     });
-//   };
 
 
 
@@ -291,7 +266,7 @@ misery is a reminder that you’re not too sensitive, it’s mad out here.</p>
 </CookieConsent> */}
 
 
-<Footer></Footer> 
+{/* <Footer></Footer>  */}
             </div>
             </div>
   </div>

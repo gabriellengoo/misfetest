@@ -1,20 +1,12 @@
 import imageUrlBuilder from '@sanity/image-url';
-// import client from './sanityClient'
 import { useState, useEffect } from 'react';
 import styles from '../../styles/Post.module.css';
 import BlockContent from '@sanity/block-content-to-react';
 import { Toolbar } from '../../components/toolbar';
 import { sanityClient } from '@sanity/client'
-// import Image from "../../components/Image"
 import Link from "next/link"
-// import Footer from '../../components/Footer';
-import FooterComponent from '../../components/foottest';
-import Head from 'next/head';
-import { SectionTitle } from "../../components/SectionTitle";
-import Marquee from "react-fast-marquee";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from 'react-responsive-carousel';
 import Footer from '../../components/Footer';
+import Head from 'next/head';
 
 export const Resourcesp = ({ title, phonetextsupport, inperson, communitiesUk, communitiesGlobal, housing, grief, sexualhealth, antiblackness, fatphobia,
   suicide,
@@ -51,10 +43,8 @@ export const Resourcesp = ({ title, phonetextsupport, inperson, communitiesUk, c
 
   return (
     <div>
-             <Head>
-       {/* <script src="https://unpkg.com/react@16.12.0/umd/react.development.js"></script>
-<script src="https://unpkg.com/react-dom@16.12.0/umd/react-dom.development.js"></script> */}
-<title>Resources for qtibpoc healing</title>
+      <Head>
+        <title>Resources for qtibpoc healing</title>
       </Head>
       <Toolbar /> 
 
@@ -82,7 +72,6 @@ export const Resourcesp = ({ title, phonetextsupport, inperson, communitiesUk, c
         </div>
   
       <section className=" pt-36 relative hidden md:block ">
-{/* <img className=" w-2/6 absolute drop-shadow-[0_0px_5px_red]" src="https://i.ibb.co/Q6g7Tk0/Masturbator-White-Thick-Transparent.png" />  */}
 
 <div className='  z-0 p-5 top-0 w-10/12 mx-auto  max-w-4xl'>
 <div className={styles.wrapper}>    
@@ -97,11 +86,11 @@ export const Resourcesp = ({ title, phonetextsupport, inperson, communitiesUk, c
 
 <div className=' p-3'>
           <div className='  m-auto text-xl font-light'>
-          <Link href="../crisis/crisis"><a className=' ' >*IF UR IN CRISIS CLICK HERE* ↗</a></Link>
+          <Link href="../crisis/crisis">*IF UR IN CRISIS CLICK HERE* ↗</Link>
             </div>
                   
                   <div className='  m-auto text-xl font-light'>
-        <Link href="https://philome.la/jace_harr/you-feel-like-shit-an-interactive-self-care-guide/play/index.html"><a target="_blank" className=' ' >&quot;you feel like shit&quot; interactive self care guide ↗</a></Link>
+        <Link target="_blank" href="https://philome.la/jace_harr/you-feel-like-shit-an-interactive-self-care-guide/play/index.html">&quot;you feel like shit&quot; interactive self care guide ↗</Link>
           </div>
           </div>
 
@@ -112,13 +101,13 @@ export const Resourcesp = ({ title, phonetextsupport, inperson, communitiesUk, c
         <div className="  text-3xl tracking-wide px-0 ">
       <div className="  ">
 
-<li><Link  href="#phonetextsupport"><a className=''>☆ phone/text support ☆</a></Link></li>
-<li><Link href="#inperson"><a className=''>☆ in-person london-based support ☆</a></Link></li>
-<li><Link href="#communitiesUk"><a className=''>☆ communities & collectives (uk) ☆</a></Link></li>
+<li><Link  href="#phonetextsupport">☆ phone/text support ☆</Link></li>
+<li><Link href="#inperson">☆ in-person london-based support ☆</Link></li>
+<li><Link href="#communitiesUk">☆ communities & collectives (uk) ☆</Link></li>
 <div></div>
-<li><Link href="#communitiesGlobal"><a className=''>☆ communities & collectives (global) ☆</a></Link></li>
+<li><Link href="#communitiesGlobal">☆ communities & collectives (global) ☆</Link></li>
 <div></div>
-<li><Link href="#housing"><a className=''>☆ housing (london/uk) ☆</a></Link></li>
+<li><Link href="#housing">☆ housing (london/uk) ☆</Link></li>
 </div>
 </div>
 </div>
@@ -127,13 +116,13 @@ export const Resourcesp = ({ title, phonetextsupport, inperson, communitiesUk, c
             <div className={styles.links}>
         <div className="  text-3xl tracking-wide px-0 ">
       <div className="  ">
-      <li><Link  href="#grief"><a className=''>☆ grief ☆</a></Link></li>
-      <li><Link href="#sexual"><a className=''>☆ sexual health ☆</a></Link></li>
-      <li><Link href="#anti"><a className=''>☆ anti-blackness ☆</a></Link></li>
+      <li><Link  href="#grief">☆ grief ☆</Link></li>
+      <li><Link href="#sexual">☆ sexual health ☆</Link></li>
+      <li><Link href="#anti">☆ anti-blackness ☆</Link></li>
 <div></div>
-<li><Link href="#fatphobia"><a className=''>☆ fatphobia ☆</a></Link></li>
+<li><Link href="#fatphobia">☆ fatphobia ☆</Link></li>
 <div></div>
-<li><Link href="#suicide"><a className=''>☆ suicide ☆</a></Link></li>
+<li><Link href="#suicide">☆ suicide ☆</Link></li>
 </div>
 </div>
 </div>
@@ -142,13 +131,13 @@ export const Resourcesp = ({ title, phonetextsupport, inperson, communitiesUk, c
             <div className={styles.links}>
         <div className="  text-3xl tracking-wide px-0 ">
       <div className="  ">
-      <li><Link  href="#substance"><a className=''>☆ substance use/harm reduction ☆</a></Link></li>
-      <li><Link href="#lgbtqia"><a className=''>☆ lgbtqia+ & trauma herbalism ☆</a></Link></li>
-      <li><Link href="#therapy"><a className=''>☆ therapy ☆</a></Link></li>
+      <li><Link  href="#substance">☆ substance use/harm reduction ☆</Link></li>
+      <li><Link href="#lgbtqia">☆ lgbtqia+ & trauma herbalism ☆</Link></li>
+      <li><Link href="#therapy">☆ therapy ☆</Link></li>
 <div></div>
-<li><Link href="#queer"><a className=''>☆ queer and trans friendly: moving your body! ☆</a></Link></li>
+<li><Link href="#queer">☆ queer and trans friendly: moving your body! ☆</Link></li>
 <div></div>
-<li><Link href="#transformative"><a className=''>☆ transformative justice ☆</a></Link></li>
+<li><Link href="#transformative">☆ transformative justice ☆</Link></li>
 </div>
 </div>
 </div>
@@ -275,7 +264,7 @@ export const Resourcesp = ({ title, phonetextsupport, inperson, communitiesUk, c
         </button>
       )}
 
-        <Footer></Footer>
+        {/* <Footer></Footer> */}
 
         </div>
                   </div>

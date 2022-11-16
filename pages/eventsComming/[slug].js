@@ -181,7 +181,8 @@ export const getServerSideProps = async pageContext => {
     return {
       notFound: true
     }
-  } else {
+  } 
+  else {
     return {
       props: {
         description: post.description,
