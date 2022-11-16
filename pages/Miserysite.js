@@ -266,7 +266,7 @@ misery is a reminder that you’re not too sensitive, it’s mad out here.</p>
 </CookieConsent> */}
 
 
-{/* <Footer></Footer>  */}
+          <Footer></Footer> 
             </div>
             </div>
   </div>

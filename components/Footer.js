@@ -5,7 +5,7 @@ import Typography from '@mui/material/Typography'
 import Box from "@mui/material/Box";
 import Divider from '@mui/material/Divider';
 import { Facebook, Instagram, Twitter } from "@mui/icons-material";
-import MuiNextLink from "./MuiNextLink" 
+import MuiNextLink from "../components/MuiNextLink" 
 import TextField from '@mui/material/TextField';
 
 function FooterComponent() {    
@@ -15,7 +15,7 @@ function FooterComponent() {
 <Box component="footer" sx={{ pt: 5, bgcolor: "none" , border: "none" }}>
 
 <Stack padding={2} justifyContent="center" direction={{ xs: 'column', sm: 'row' }} spacing={{ xs: 1, sm: 2, md: 4 }}>
-<MuiNextLink sx={{ textDecoration: "none", color: "common.black" }} href="../../Miserysite"  rel="noopener noreferrer" >
+{/* <MuiNextLink sx={{ textDecoration: "none", color: "common.black" }} href="../../Miserysite"  rel="noopener noreferrer" >
 home
 		</MuiNextLink>
 		<MuiNextLink sx={{ textDecoration: "none", color: "common.black" }} href="../videoBlogPost/our-story"  rel="noopener noreferrer" >
@@ -29,7 +29,7 @@ home
 		</MuiNextLink>
 		<MuiNextLink sx={{ textDecoration: "none", color: "common.black" }} href="../../getinvolved/get-involved"  rel="noopener noreferrer" >
 		get involved
-		</MuiNextLink>
+		</MuiNextLink> */}
 </Stack>
 
 
@@ -39,13 +39,13 @@ home
 >
 
 
-		<MuiNextLink sx={{ textDecoration: "none", color: "common.black" }} href="https://www.instagram.com/miseryparty/?hl=en" target="_blank" rel="noopener noreferrer">
+		{/* <MuiNextLink sx={{ textDecoration: "none", color: "common.black" }} href="https://www.instagram.com/miseryparty/?hl=en" target="_blank" rel="noopener noreferrer">
 		<Instagram fontSize="large" />
 		</MuiNextLink>
 
 		<MuiNextLink sx={{ textDecoration: "none", color: "common.black" }} href="https://twitter.com/miseryparty_" target="_blank" rel="noopener noreferrer" >
 		<Twitter fontSize="large" />
-		</MuiNextLink>
+		</MuiNextLink> */}
 
 		<TextField id="outlined-basic" label="Search" variant="outlined" color="secondary" />
 	</Stack>
@@ -53,12 +53,12 @@ home
 
 
 	<Stack padding={2} justifyContent="center" direction={{ xs: 'column', sm: 'row' }} spacing={{ xs: 1, sm: 2, md: 4 }}>
-<MuiNextLink sx={{ textDecoration: "none", color: "common.black" }} href="../../getinvolved/get-involved"  rel="noopener noreferrer" >
+{/* <MuiNextLink sx={{ textDecoration: "none", color: "common.black" }} href="../../getinvolved/get-involved"  rel="noopener noreferrer" >
 donate 
 		</MuiNextLink>
 		<MuiNextLink sx={{ textDecoration: "none", color: "common.black" }} href="../../faq"  rel="noopener noreferrer" >
 		newsletter
-		</MuiNextLink>
+		</MuiNextLink> */}
 		
 </Stack>
 
