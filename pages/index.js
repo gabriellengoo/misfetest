@@ -40,8 +40,15 @@ export default function FirstPost() {
 <script  type="module" src="../assets/app.js" defer></script>
       </Head>
 
+      <MobileView>
+        <div className='px-6 pt-6 lg:px-8'>
+        <h1 className="text-4xl font-bold tracking-tight sm:text-center sm:text-6xl">We are currently in development for mobile :'(</h1>
+        <p className="mt-6 text-lg leading-8 text-gray-600 sm:text-center">Please view on desktop</p>   
+          </div>  
+      </MobileView>
 
 
+      <BrowserView> 
       {/* <Scene3 className="canvas3d"></Scene3> */}
 <div className={styles.das}>
    
@@ -214,32 +221,8 @@ export default function FirstPost() {
 {/* <script src="/scripts/bundle.min.js"></script> */}
     </div>
 
+    </BrowserView> 
 
-    {/* <div className={styles.das}>
-    <section className=' p-5   justify-center text-center  h-screen mx-auto px-0 mix-blend-difference  '>
-      <h1 className='text-3xl text-[#1fd705] m-auto z-0 max-w-2xl justify-center '> misery is.. </h1>
-    <p className=' text-[#515151d3]  text-4xl m-auto p-6 font-normal z-0 h-2/5 w-6/6  overflow-scroll justify-center' >
-    <p className=' z-0 p-3  '></p>
-      <p className=' hover:text-[#1fd705] drop-shadow-[1rem_1rem_1rem_red] hover:font-normal  p-7 m-auto hover:ml-9 duration-1000  '> ＊*•̩̩͙✩•̩̩͙*˚ crying at the party *•̩̩͙✩•̩̩͙*˚＊</p>
-      <p className=' hover:text-[#1fd705] drop-shadow-[1rem_1rem_1rem_red] hover:font-normal  p-7  hover:ml-9 duration-1000 '>＊*•̩̩͙✩•̩̩͙*˚ your emotional support stuffed animal that looks more depressed than you do *•̩̩͙✩•̩̩͙*˚</p>
-      <p className=' hover:text-[#1fd705] drop-shadow-[1rem_1rem_1rem_red] hover:font-normal  p-7  hover:ml-9 duration-1000 '>＊*•̩̩͙✩•̩̩͙*˚being a fag and a dyke at the same time *•̩̩͙✩•̩̩͙*˚</p>
-      <p className=' hover:text-[#1fd705] drop-shadow-[1rem_1rem_1rem_red] hover:font-normal  p-7  hover:ml-9 duration-1000 '>＊*•̩̩͙✩•̩̩͙*˚a 4 hour bath and a 7 day free trial *•̩̩͙✩•̩̩͙*˚</p>
-      <p className=' hover:text-[#1fd705] drop-shadow-[1rem_1rem_1rem_red] hover:font-normal  p-7  hover:ml-9 duration-1000 '>＊*•̩̩͙✩•̩̩͙*˚that one piece of butt hair the beautician forgot about *•̩̩͙✩•̩̩͙*˚</p>
-      <p className=' hover:text-[#1fd705] drop-shadow-[1rem_1rem_1rem_red] hover:font-normal  p-7  hover:ml-9 duration-1000 '>＊*•̩̩͙✩•̩̩͙*˚waxing your butt in the first place *•̩̩͙✩•̩̩͙*˚</p>
-      <p className=' hover:text-[#1fd705] drop-shadow-[1rem_1rem_1rem_red] hover:font-normal  p-7  hover:ml-9 duration-1000 '>＊*•̩̩͙✩•̩̩͙*˚living in your overdraft but eating out anyway *•̩̩͙✩•̩̩͙*˚</p>
-      <p className=' hover:text-[#1fd705] drop-shadow-[1rem_1rem_1rem_red] hover:font-normal  p-7  hover:ml-9 duration-1000 '>＊*•̩̩͙✩•̩̩͙*˚searching for a halal photo to send nani ji *•̩̩͙✩•̩̩͙*˚</p>
-      <p className=' hover:text-[#1fd705] drop-shadow-[1rem_1rem_1rem_red] hover:font-normal  p-7  hover:ml-9 duration-1000 '>＊*•̩̩͙✩•̩̩͙*˚putting your headphones in at the back of the cab but not even listening to anything you just don’t want to chat *•̩̩͙✩•̩̩͙*˚</p>
-      <p className=' hover:text-[#1fd705] drop-shadow-[1rem_1rem_1rem_red] hover:font-normal  p-7  hover:ml-9 duration-1000 '>＊*•̩̩͙✩•̩̩͙*˚forgiving your younger self for the things they did to get you here *•̩̩͙✩•̩̩͙*˚</p>
-      <p className=' hover:text-[#1fd705] drop-shadow-[1rem_1rem_1rem_red] hover:font-normal  p-7  hover:ml-9 duration-1000 '>＊*•̩̩͙✩•̩̩͙*˚your second hand binder *•̩̩͙✩•̩̩͙*˚</p>
-      <p className=' hover:text-[#1fd705] drop-shadow-[1rem_1rem_1rem_red] hover:font-normal  p-7  hover:ml-9 duration-1000 '>＊*•̩̩͙✩•̩̩͙*˚falling in love with your therapist *•̩̩͙✩•̩̩͙*˚</p>
-      <p className=' hover:text-[#1fd705] drop-shadow-[1rem_1rem_1rem_red] hover:font-normal  p-7  hover:ml-9 duration-1000 '>＊*•̩̩͙✩•̩̩͙*˚ this too shall pass *•̩̩͙✩•̩̩͙*˚</p>
-      <p className=' hover:text-[#1fd705] drop-shadow-[1rem_1rem_1rem_red] hover:font-normal  p-7  hover:ml-9 duration-1000 '>＊*•̩̩͙✩•̩̩͙*˚freedom is sorrow is moments of connection is dissociation is remembering is moving through *•̩̩͙✩•̩̩͙*˚</p>
-      <p className=' hover:text-[#1fd705] drop-shadow-[1rem_1rem_1rem_red] hover:font-normal  p-7  hover:ml-9 duration-1000 '>＊*•̩̩͙✩•̩̩͙*˚company *•̩̩͙✩•̩̩͙*˚</p>
-      <p className=' text-[#1fd705] ml-0 text-9xl hover:ml-9 duration-1000 drop-shadow-[1rem_1rem_1rem_yellow] '><i>me and you</i></p>
-      <p className=' p-10 '></p>
-    </p>
-</section>
-    </div> */}
     </Layout>
   )
 }
