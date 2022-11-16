@@ -86,20 +86,21 @@ export default function MiserySite({ posts }) {
         </div>
 
 <div className={styles.rowsall}>
-          {mappedPosts.length ? mappedPosts.map((p, index) => (
-             <div key={index}>
+          {/* {mappedPosts.length ? mappedPosts.map((p, index) => ( */}
+            {/* //  <div key={index}> */}
           <div className={styles.rows}>
                 {/* p1 */}
                 <div className=' w-1/6 '>
                         <div className=' duration-500 p-10  '>
-                      
+                        {mappedPosts.length ? mappedPosts.map((p, index) => (
+                          <div key={index}>
                         <Link  target="_blank" lassName=' font-bold' href={p.url}>
                             <div className={styles.card}>
                                     <div className="  hover:drop-shadow-[0_35px_35px_#ffffffd3]   duration-1000 bg-[#ffffffd3]  items-center border-[1px] rounded-[5%] z-50  border-[#efefef]">
                                         <div className="  text-xs  ">
                                                             
-                                                           
-                                                    <img className=' w-6/6' src={p.image} />
+                                                            
+                                                    <img className=' w-1/6' src={p.image} />
                                                     <p className=' text-base text-center font-bold  p-5 '>{p.name}</p>
                                                     <div className={styles.cardone}>
                                                     <div>{p.summary}</div>
@@ -111,14 +112,15 @@ export default function MiserySite({ posts }) {
                                                     
                                         </div>
                                     </div>
-                            
+                            {/* </div> */}
                         </Link>
                         </div>
+                        )) : <>No Posts Yet</>}
                         </div>
                 </div>
                 {/* p1 */}
             </div>
-          )) : <>No Posts Yet</>}
+          {/* )) : <>No Posts Yet</>} */}
 </div>
 
        

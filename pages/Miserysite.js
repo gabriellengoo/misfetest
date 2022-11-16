@@ -10,7 +10,8 @@ import { useState, useEffect } from 'react';
 import Script from "next/script";
 import { useRouter } from 'next/router';
 // import 'animate.css';
-// import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
+import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
+import { browserName, CustomView } from "react-device-detect";
 import React from 'react';
 import Layout from "../components/Layout";
 
@@ -97,6 +98,16 @@ export default function Home({ posts }) {
 <script type="module" src="../assets/app.js" defer></script>
 
       </Head>
+
+
+
+
+      <MobileView>
+
+      </MobileView>
+
+      {/* <CustomView condition={browserName === "Firefox"}></CustomView>  */}
+      <BrowserView> 
       <Toolbar />  
 
 
@@ -272,7 +283,7 @@ misery is a reminder that you’re not too sensitive, it’s mad out here.</p>
   </div>
   </section>
 
-
+  </BrowserView>
             
 
     </Layout>
