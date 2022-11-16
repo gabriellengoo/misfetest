@@ -87,6 +87,7 @@ export default function MiserySite({ posts }) {
 
 <div className={styles.rowsall}>
           {mappedPosts.length ? mappedPosts.map((p, index) => (
+              <div key={index}>
           <div className={styles.rows}>
                 {/* p1 */}
                 <div className=' w-1/6 '>
@@ -117,6 +118,7 @@ export default function MiserySite({ posts }) {
                         </div>
                 </div>
                 {/* p1 */}
+            </div>
             </div>
           )) : <>No Posts Yet</>}
 </div>
