@@ -112,12 +112,12 @@ const MAILCHIMP_URL = process.env.NEXT_PUBLIC_MAILCHIMP_URL;
               
               {/* <!-- Begin Mailchimp Signup Form --> */}
       <div id="mc_embed_signup">
-          <form action="https://instagram.us4.list-manage.com/subscribe/post?u=53ab2b977fbe8d08ff728f928&amp;id=92c2a49407&amp;f_id=00f305e9f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank" novalidate>
+          <form action="https://instagram.us4.list-manage.com/subscribe/post?u=53ab2b977fbe8d08ff728f928&amp;id=92c2a49407&amp;f_id=00f305e9f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank" noValidate>
               <div id="mc_embed_signup_scroll">
               <h2>join our newsletter &lt;3</h2>
               <div className="indicates-required"><span className="asterisk">*</span> indicates required</div>
       <div className="mc-field-group">
-      <label for="mce-EMAIL">Email Address  <span className="asterisk">*</span>
+      <label htmlFor="mce-EMAIL">Email Address  <span className="asterisk">*</span>
       </label>
       <input type="email" value="" name="EMAIL" className="required email" id="mce-EMAIL" required />
       <span id="mce-EMAIL-HELPERTEXT" className="helper_text"></span>
@@ -128,7 +128,7 @@ const MAILCHIMP_URL = process.env.NEXT_PUBLIC_MAILCHIMP_URL;
       </div>   
       {/* <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups--> */}
           <div aria-hidden="true">
-            <input type="text" name="b_53ab2b977fbe8d08ff728f928_92c2a49407" tabindex="-1" value=""/></div>
+            <input type="text" name="b_53ab2b977fbe8d08ff728f928_92c2a49407" tabIndex="-1" value=""/></div>
               <div className="optionalParent">
                   <div className="clear foot">
                       <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" className="button" />
