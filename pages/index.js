@@ -6,7 +6,8 @@ import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 import Layout from "../components/Layout";
-
+import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
+import { browserName, CustomView } from "react-device-detect";
 
 export default function FirstPost() {
 
