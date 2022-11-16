@@ -4,16 +4,10 @@ import { Toolbar } from '../components/toolbar';
 import Footer from '../components/Footer';
 import styles from '../styles/collaborators.module.css';
 import { useState, useEffect } from 'react';
-import Script from "next/script";
-import { useRouter } from 'next/router';
-import 'animate.css';
-import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
+// import 'animate.css';
+// import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
 import React from 'react';
-import { SectionTitle } from "../components/SectionTitle";
 import Layout from "../components/Layout";
-import { ReactDimmer } from 'react-dimmer'
-import FooterComponent from '../components/foottest';
-import Marquee from "react-fast-marquee";
 
 
 
