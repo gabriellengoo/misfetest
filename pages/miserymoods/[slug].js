@@ -14,18 +14,14 @@ import CarouselComponent from "../../components/carousel";
 
 export const eventsMiseryMoods = ({ name, phonetextsupport, inperson, communitiesUk, communitiesGlobal, housing, images }) => {
     
-  useEffect(() => {
-    const imgBuilder = imageUrlBuilder({
-      projectId: 'jgs4s870',
-      dataset: 'production',
-    });
-  console.log(images)
-  // setImageUrl(imgBuilder.image(mainImage));
+//   useEffect(() => {
+//     const imgBuilder = imageUrlBuilder({
+//       projectId: 'jgs4s870',
+//       dataset: 'production',
+//     });
+//   console.log(images)
 
-  
-
-    
-}, []);
+// }, []);
       // const [imageUrl, setImageUrl] = useState('');
     
       // useEffect(() => {

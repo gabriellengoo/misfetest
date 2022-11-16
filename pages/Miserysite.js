@@ -114,10 +114,10 @@ export default function Home({ posts }) {
 
 <title>misery</title>
 
-<script src="https://cdn.jsdelivr.net/npm/@klaxit/cookie-consent@X.Y.Z/dist/cookie-consent.js"></script>
+{/* <script src="https://cdn.jsdelivr.net/npm/@klaxit/cookie-consent@X.Y.Z/dist/cookie-consent.js"></script> */}
 <script type="text/javascript" src="https://unpkg.com/jquery@1.11.1/dist/jquery.js" defer></script>
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXX-X"></script>
+{/* <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXX-X"></script> */}
 {/* <script type="text/javascript" src="//www.PrivacyPolicies.com/cookie-consent/releases/3.0.0/cookie-consent.js"></script> */}
 <script type="module" src="../assets/app.js" defer></script>
 

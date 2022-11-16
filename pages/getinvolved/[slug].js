@@ -214,7 +214,7 @@ export const getin = ({ title, body, bodytwo,
         <div className=''>
         <h1 className=' py-8 tracking-wide  text-5xl font-semibold'>donate to us</h1>
           <BlockContent className={styles.body} blocks={bodythree} />
-          <div class="beacon-form" data-account="nsun" data-form="3fa92214"></div>
+          <div className="beacon-form" data-account="nsun" data-form="3fa92214"></div>
         </div>
         {/* </div>
     </div> */}
