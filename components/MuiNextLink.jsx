@@ -20,7 +20,7 @@ export const NextLinkComposed = React.forwardRef(function NextLinkComposed(props
       passHref={passHref}
       locale={locale}
     >
-      <a ref={ref} {...other} />
+      {/* <a ref={ref} {...other} /> */}
     </NextLink>
   );
 });

@@ -78,8 +78,8 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-    cursor:url(https:
-    //babesonwaves.club/wp-content/uploads/2021/07/bow-cursor-20px.png) -10 -10, auto!important;
+    /* cursor:url(https: //babesonwaves.club/wp-content/uploads/2021/07/bow-cursor-20px.png) -10 -10, auto!important; */
+    cursor: url(https://babesonwaves.club/wp-content/uploads/2021/07/bow-cursor-20px.png) -10 -10,auto!important;
     /* background: #ffffff; */
     /* background: #f2f2f2; */
     /* background: var(--bg-gradient); */

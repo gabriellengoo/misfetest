@@ -7,6 +7,7 @@ import Divider from '@mui/material/Divider';
 import { Facebook, Instagram, Twitter } from "@mui/icons-material";
 import MuiNextLink from "../components/MuiNextLink" 
 import TextField from '@mui/material/TextField';
+import Link from 'next/link';
 
 function FooterComponent() {    
 	return ( 
@@ -15,21 +16,21 @@ function FooterComponent() {
 <Box component="footer" sx={{ pt: 5, bgcolor: "none" , border: "none" }}>
 
 <Stack padding={2} justifyContent="center" direction={{ xs: 'column', sm: 'row' }} spacing={{ xs: 1, sm: 2, md: 4 }}>
-{/* <MuiNextLink sx={{ textDecoration: "none", color: "common.black" }} href="../../Miserysite"  rel="noopener noreferrer" >
+<Link sx={{ textDecoration: "none", color: "common.black" }} href="../../Miserysite"  rel="noopener noreferrer" >
 home
-		</MuiNextLink>
-		<MuiNextLink sx={{ textDecoration: "none", color: "common.black" }} href="../videoBlogPost/our-story"  rel="noopener noreferrer" >
+		</Link>
+		<Link sx={{ textDecoration: "none", color: "common.black" }} href="../videoBlogPost/our-story"  rel="noopener noreferrer" >
 		about
-		</MuiNextLink>
-		<MuiNextLink sx={{ textDecoration: "none", color: "common.black" }} href="../../contact/contact"  rel="noopener noreferrer" >
+		</Link>
+		<Link sx={{ textDecoration: "none", color: "common.black" }} href="../../contact/contact"  rel="noopener noreferrer" >
 		contact
-		</MuiNextLink>
-		<MuiNextLink sx={{ textDecoration: "none", color: "common.black" }} href="../../resources/resources-for-qtibpoc-healing"  rel="noopener noreferrer" >
+		</Link>
+		<Link sx={{ textDecoration: "none", color: "common.black" }} href="../../resources/resources-for-qtibpoc-healing"  rel="noopener noreferrer" >
 		resources
-		</MuiNextLink>
-		<MuiNextLink sx={{ textDecoration: "none", color: "common.black" }} href="../../getinvolved/get-involved"  rel="noopener noreferrer" >
+		</Link>
+		<Link sx={{ textDecoration: "none", color: "common.black" }} href="../../getinvolved/get-involved"  rel="noopener noreferrer" >
 		get involved
-		</MuiNextLink> */}
+		</Link>
 </Stack>
 
 
@@ -39,13 +40,13 @@ home
 >
 
 
-		{/* <MuiNextLink sx={{ textDecoration: "none", color: "common.black" }} href="https://www.instagram.com/miseryparty/?hl=en" target="_blank" rel="noopener noreferrer">
+		<MuiNextLink sx={{ textDecoration: "none", color: "common.black" }} href="https://www.instagram.com/miseryparty/?hl=en" target="_blank" rel="noopener noreferrer">
 		<Instagram fontSize="large" />
 		</MuiNextLink>
 
 		<MuiNextLink sx={{ textDecoration: "none", color: "common.black" }} href="https://twitter.com/miseryparty_" target="_blank" rel="noopener noreferrer" >
 		<Twitter fontSize="large" />
-		</MuiNextLink> */}
+		</MuiNextLink>
 
 		<TextField id="outlined-basic" label="Search" variant="outlined" color="secondary" />
 	</Stack>
@@ -53,12 +54,12 @@ home
 
 
 	<Stack padding={2} justifyContent="center" direction={{ xs: 'column', sm: 'row' }} spacing={{ xs: 1, sm: 2, md: 4 }}>
-{/* <MuiNextLink sx={{ textDecoration: "none", color: "common.black" }} href="../../getinvolved/get-involved"  rel="noopener noreferrer" >
+<Link sx={{ textDecoration: "none", color: "common.black" }} href="../../getinvolved/get-involved"  rel="noopener noreferrer" >
 donate 
-		</MuiNextLink>
-		<MuiNextLink sx={{ textDecoration: "none", color: "common.black" }} href="../../faq"  rel="noopener noreferrer" >
+		</Link>
+		<Link sx={{ textDecoration: "none", color: "common.black" }} href="../../faq"  rel="noopener noreferrer" >
 		newsletter
-		</MuiNextLink> */}
+		</Link>
 		
 </Stack>
 
@@ -68,13 +69,13 @@ donate
 		© 2022 - {new Date().getFullYear()}, misery
 		</div>
 	</Typography>
-	{/* <Typography align="center" padding={0} color="common.black">
+	<Typography align="center" padding={0} color="common.black">
 	<div className="font-light">
 		Built by <MuiNextLink sx={{ textDecoration: "none", color: "common.black" }} href="https://www.instagram.com/is_this_gabrielle/"  rel="noopener noreferrer" >
 		The internet architect
 		
 		</MuiNextLink> 🔗</div>
-	</Typography> */}
+	</Typography>
 </Box>
 </div>)
 }
