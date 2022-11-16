@@ -87,6 +87,7 @@ export default function MiserySite({ posts }) {
 
 <div className={styles.rowsall}>
           {mappedPosts.length ? mappedPosts.map((p, index) => (
+             <div key={index}>
           <div className={styles.rows}>
                 {/* p1 */}
                 <div className=' w-1/6 '>
@@ -97,7 +98,7 @@ export default function MiserySite({ posts }) {
                                     <div className="  hover:drop-shadow-[0_35px_35px_#ffffffd3]   duration-1000 bg-[#ffffffd3]  items-center border-[1px] rounded-[5%] z-50  border-[#efefef]">
                                         <div className="  text-xs  ">
                                                             
-                                                            <div key={index}>
+                                                           
                                                     <img className=' w-6/6' src={p.image} />
                                                     <p className=' text-base text-center font-bold  p-5 '>{p.name}</p>
                                                     <div className={styles.cardone}>
@@ -110,9 +111,9 @@ export default function MiserySite({ posts }) {
                                                     
                                         </div>
                                     </div>
-                            </div>
+                            
                         </Link>
-                      
+                        </div>
                         </div>
                 </div>
                 {/* p1 */}

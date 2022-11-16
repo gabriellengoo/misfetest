@@ -5,22 +5,20 @@ import BlockContent from '@sanity/block-content-to-react';
 import { Toolbar } from '../../components/toolbar';
 import Footer from '../../components/Footer';
 import Link from 'next/link';
-// import "react-responsive-carousel/lib/styles/carousel.min.css";
-// import { Carousel } from 'react-responsive-carousel';
 import Head from 'next/head';
  
 // bodytwo, bodythree, bodyfour, bodyfive, bodysix,bodyseven, bodyeight,
 export const videoBlogPost = ({ name, body, summary, url, image}) => {
   
-  const [imageUrl, setImageUrl] = useState('');
-  useEffect(() => {
-    const imgBuilder = imageUrlBuilder({
-      projectId: 'jgs4s870',
-      dataset: 'production',
-    });
+  // const [imageUrl, setImageUrl] = useState('');
+  // useEffect(() => {
+  //   const imgBuilder = imageUrlBuilder({
+  //     projectId: 'jgs4s870',
+  //     dataset: 'production',
+  //   });
 
-    setImageUrl(imgBuilder.image(image));
-  }, []);
+    // setImageUrl(imgBuilder.image(image));
+  // }, []);
 
   return (
     
