@@ -104,7 +104,7 @@ export default function Home({ posts }) {
 
       <MobileView>
         <div className='px-6 pt-6 lg:px-8'>
-        <h1 className="text-4xl font-bold tracking-tight sm:text-center sm:text-6xl">We are currently in development for mobile :'(</h1>
+        <h1 className="text-4xl font-bold tracking-tight sm:text-center sm:text-6xl">We are currently in development for mobile :(</h1>
         <p className="mt-6 text-lg leading-8 text-gray-600 sm:text-center">Please view on desktop</p>   
           </div>  
       </MobileView>
