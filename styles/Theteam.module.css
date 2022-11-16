@@ -268,19 +268,41 @@ padding: 0;
 cursor:  url("https://studio-push.com/public/img/cursor-red.svg") 30 11, auto;
 } */
 
+
+.rows {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 2vw;
+  width: 50%;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.rows>* {
+  flex: 1 1 160px;
+  padding-bottom: 2vw;
+}
+
+.rowsall{
+  display: flex;
+  width: 98vw;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 .cardone{
-  background-image:url('https://i.ibb.co/Z6FVzYw/aisha.jpg');
+  /* background-image:url('https://i.ibb.co/Z6FVzYw/aisha.jpg'); */
   /* position:relative; */
    position: fixed;
   z-index: 100;
   top: 0;
   width:  auto;
    border-radius: 5%;
-   position:relative;
-  height: 100%;
+   /* position:relative; */
+  /* height: 100%; */
   overflow: hidden;
   opacity: 100%;
-  color: #00000000;
+  color: #000000;
   border-radius: 5%;
   position:relative;
 }
@@ -288,19 +310,8 @@ cursor:  url("https://studio-push.com/public/img/cursor-red.svg") 30 11, auto;
 
 .cardone:hover{
   background-image:none;
-  /* position:relative; */
-   position: fixed;
-  z-index: 100;
-  top: 0;
-  width:  auto;
-   border-radius: 5%;
-   position:relative;
-  height: 100%;
-  overflow: hidden;
-  /* opacity: 0; */
   color: #000000;
   border-radius: 5%;
-  position:relative;
 }
 
 .card2{

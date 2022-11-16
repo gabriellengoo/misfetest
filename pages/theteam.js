@@ -68,38 +68,67 @@ export default function MiserySite({ posts }) {
         <Toolbar /> 
 
 
-        <section className="h-screen relative hidden lg:block">
+        <section className=" ">
 
-                  <div className={styles.wrapper}>
-                                    <div className={styles.songinfo}>
-                                                {mappedPosts.length ? mappedPosts.map((p, index) => (
-                                                <div key={index}>
-                                                {/* <div className='p-20 border-b border-[#1e90ff]'> */}
-                                                <div className={styles.songcontainer}>
-                                                      <div className={styles.songinfo}>
-                                                            <div className={styles.songlink} >
-                                                                  <div>
-                                                                  <Link className={styles.songartist} href={p.url}>
-                                                                        <img className={styles.songimg} src={p.image} />
-                                                                  </Link>
-                                                                              <div className={styles.play}>▶︎</div>
-                                                                  </div>
-                                                            </div>
 
-                                                            <span  className={styles.songname}>{p.name}</span>
-                                                            <div  className={styles.songdescription} >
-                                                                  <div>{p.summary}</div>
-                                                                  {/* ↗ */}
-                                                                  {/* <a  className={styles.songartist}> {p.url}</a> */}
-                                                                  {/* <Link className={styles.songartist} href={p.url}>listen here ↗ </Link> */}
-                                                            </div>
-                                                      </div>
-                                                </div>
-                                                </div>
-                                                )) : <>No Posts Yet</>}
+        <div className='relative hidden lg:block'>
+
+        <div className=' mx-auto pt-36 z-0 p-5 top-0 w-9/12 '>
+          
+          <img className={styles.figure} src="https://i.ibb.co/sFyFWsf/Bald.png"/>
+          <img className={styles.figure2} src="https://i.ibb.co/Q6g7Tk0/Masturbator-White-Thick-Transparent.png" /> 
+          {/* <Toolbar />  */}
+  
+          {/* <p className="text-6xl  text-center pt-20 font-semibold  "> .｡.:*☆thƐ tƐ𝓐m.｡.:*☆ </p>  */}
+          <p className={styles.crytext}> the team</p> 
+          <p className="text-2xl  text-center italic  ">Get to know the team behind misery :)</p>
+          </div>
+        </div>
+
+<div className={styles.rowsall}>
+          {mappedPosts.length ? mappedPosts.map((p, index) => (
+          <div className={styles.rows}>
+                {/* p1 */}
+                <div className=' w-1/6 '>
+                        <div className=' duration-500 p-10  '>
+                      
+                        <Link  target="_blank" lassName=' font-bold' href={p.url}>
+                            <div className={styles.card}>
+                                    <div className="  hover:drop-shadow-[0_35px_35px_#ffffffd3]   duration-1000 bg-[#ffffffd3]  items-center border-[1px] rounded-[5%] z-50  border-[#efefef]">
+                                        <div className="  text-xs  ">
+                                                            
+                                                            <div key={index}>
+                                                                {/* className=' w-1/6' */}
+                                                    <img src={p.image} />
+                                                    <p className=' text-base text-center font-bold  p-5 '>{p.name}</p>
+                                                    <div className={styles.cardone}>
+                                                    <div>{p.summary}</div>
+                                                            <p className=""> 
+                                                        {/* find me @  */}
+                                                            </p>
+                                                    </div>
+                                                    </div>
+                                                    
+                                        </div>
                                     </div>
-                  </div>
+                            </div>
+                        </Link>
+                      
+                        </div>
+                </div>
+                {/* p1 */}
+            </div>
+          )) : <>No Posts Yet</>}
+</div>
 
+       
+
+
+               
+          
+                
+
+           
 
         </section>
 
@@ -127,7 +156,7 @@ export default function MiserySite({ posts }) {
 
 
   export const getServerSideProps = async pageContext => {
-      const query = encodeURIComponent('*[ _type == "mixtape" ]');
+      const query = encodeURIComponent('*[ _type == "team" ]');
       const url = `https://jgs4s870.api.sanity.io/v1/data/query/production?query=${query}`;
       const result = await fetch(url).then(res => res.json());
     

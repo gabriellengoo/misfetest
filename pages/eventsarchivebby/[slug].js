@@ -3,14 +3,11 @@ import { useState, useEffect } from 'react';
 import styles from '../../styles/Post.module.css';
 import BlockContent from '@sanity/block-content-to-react';
 import { Toolbar } from '../../components/toolbar';
-import { Aboutnav } from '../../components/aboutnav';
-import ReactPlayer from 'react-player';
 import Link from 'next/link';
 import Footer from '../../components/Footer';
 import Image from "../../components/Image";
 import Router from 'next/router'
 import CarouselComponent from "../../components/carousel";
-import ImgPreviewer from'img-previewer'
 import Head from 'next/head';
 import'img-previewer/dist/index.css'
 
