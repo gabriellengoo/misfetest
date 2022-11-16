@@ -9,7 +9,7 @@ import { sanityClient } from '@sanity/client'
 import Link from "next/link"
 import Footer from '../../components/Footer';
 import Head from 'next/head';
-import { SectionTitle } from "../../components/SectionTitle";
+// import { SectionTitle } from "../../components/SectionTitle";
 
 export const Crisisp = ({ title, phonetextsupport, inperson, communitiesUk, communitiesGlobal, housing, grief, sexualhealth, antiblackness,fatphobia,suicide, substancereduction, lgbtqiaherbalism, therapy, movingyourbody, }) => {
 

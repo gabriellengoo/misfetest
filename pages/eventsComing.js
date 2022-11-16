@@ -5,8 +5,8 @@ import imageUrlBuilder from '@sanity/image-url';
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import Footer from '../components/Footer';
-import FooterComponent from '../components/foottest';
-import Marquee from "react-fast-marquee";
+// import FooterComponent from '../components/foottest';
+// import Marquee from "react-fast-marquee";
 import Link from 'next/link';
 
 export default function Home({ posts }) {
