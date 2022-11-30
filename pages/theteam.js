@@ -11,7 +11,8 @@ import { useRouter } from 'next/router';
 import React from 'react';
 import Layout from "../components/Layout";
 import imageUrlBuilder from '@sanity/image-url';
-
+import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
+import { browserName, CustomView } from "react-device-detect";
 
 
 export default function MiserySite({ posts }) {
@@ -68,6 +69,75 @@ export default function MiserySite({ posts }) {
         <Toolbar /> 
 
 
+        <MobileView>
+        <section className=" ">
+
+
+<div className='relative'>
+
+<div className=' mx-auto z-0 top-0 '>
+  
+  <img className={styles.figure} src="https://i.ibb.co/sFyFWsf/Bald.png"/>
+  <img className={styles.figure2} src="https://i.ibb.co/Q6g7Tk0/Masturbator-White-Thick-Transparent.png" /> 
+  {/* <Toolbar />  */}
+
+  {/* <p className="text-6xl  text-center pt-20 font-semibold  "> .｡.:*☆thƐ tƐ𝓐m.｡.:*☆ </p>  */}
+  <p className={styles.crytextmobile}> the team</p> 
+  <p className="text-2xl italic  ">Get to know the team behind misery :)</p>
+  </div>
+</div>
+
+<div className={styles.rowsallmobile}>
+  <div className={styles.rowsmobile}>
+        {/* p1 */}
+        <div className=' '>
+                <div className=' duration-500   '>
+                {mappedPosts.length ? mappedPosts.map((p, index) => (
+                  <div key={index}>
+                <Link  target="_blank" lassName=' font-bold' href={p.url}>
+                    <div className={styles.cardmobile}>
+                            <div className="  hover:drop-shadow-[0_35px_35px_#ffffffd3]   duration-1000 bg-[#ffffffd3]  items-center border-[1px] rounded-[5%] z-50  border-[#efefef]">
+                                <div className="  text-xs  ">
+                                                    
+                                                    
+                                            <img className=' ' src={p.image} />
+                                            <p className=' text-base text-center font-bold  p-5 '>{p.name}</p>
+                                            <div className={styles.cardone}>
+                                            <div>{p.summary}</div>
+                                                    <p className=""> 
+                                                {/* find me @  */}
+                                                    </p>
+                                            </div>
+                                            </div>
+                                            
+                                </div>
+                            </div>
+                    {/* </div> */}
+                </Link>
+                </div>
+                )) : <>No Posts Yet</>}
+                </div>
+        </div>
+        {/* p1 */}
+    </div>
+  {/* )) : <>No Posts Yet</>} */}
+</div>
+
+
+
+
+       
+  
+        
+
+   
+
+</section>
+        </MobileView>
+
+
+
+        <BrowserView>
         <section className=" ">
 
 
@@ -133,7 +203,7 @@ export default function MiserySite({ posts }) {
            
 
         </section>
-
+        </BrowserView>
 
 
 

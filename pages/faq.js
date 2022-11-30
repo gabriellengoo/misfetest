@@ -5,6 +5,8 @@ import Head from 'next/head';
 import { Toolbar } from '../components/toolbar';
 // import Footer from '../components/Footer';
 import Footer from '../components/Footer';
+import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
+import { browserName, CustomView } from "react-device-detect";
 
 export default function Index() {
     
@@ -57,106 +59,89 @@ export default function Index() {
         <Toolbar /> 
 
 
-        {/* <div className={styles.main}>
-        <section className=' pt-36 w-4/6  z-50 text-4xl font-normal text-center items-center m-auto  justify-center pb-5 px-8'>
-        <p className=' font-bold p-3'>.｡.:*☆ f𝓐q.｡.:*☆</p>
-        </section> 
-</div> */}
 
 
-   
-<section className="h-screen relative hidden md:block">
-{/* <img className=" w-2/6 absolute drop-shadow-[0_0px_5px_red]" src="https://i.ibb.co/Q6g7Tk0/Masturbator-White-Thick-Transparent.png" />  */}
+        <MobileView>
+        <section className="h-screen">
+            {/* <img className=" w-2/6 absolute drop-shadow-[0_0px_5px_red]" src="https://i.ibb.co/Q6g7Tk0/Masturbator-White-Thick-Transparent.png" />  */}
 
 
 
 
-  <div className='flex h-screen'>
+            <div className='flex h-screen'>
 
 
-        <div className=' pt-36 mx-auto z-0 p-5 top-0 h-screen w-9/12 '>
-          
-        <img className={styles.figure} src="https://i.ibb.co/sFyFWsf/Bald.png"/>
-        <img className={styles.figure2} src="https://i.ibb.co/Q6g7Tk0/Masturbator-White-Thick-Transparent.png" /> 
-        {/* <Toolbar />  */}
-        {/* <p className="text-center  font-serif font-light "> u can cry if u want to</p> */}
+                    <div className=' mx-auto z-0  top-0 h-screen  '>
+                    
+                    <img className={styles.figure} src="https://i.ibb.co/sFyFWsf/Bald.png"/>
+                    <img className={styles.figure2} src="https://i.ibb.co/Q6g7Tk0/Masturbator-White-Thick-Transparent.png" /> 
+                    {/* <Toolbar />  */}
+                    {/* <p className="text-center  font-serif font-light "> u can cry if u want to</p> */}
 
-        <div className=" flex-auto mb-2 w-full p-2  text-center text[red]">
-                    <h1 className={styles.crytext2}>f𝓐q</h1>
-                    {/* {faqComponents} */}
-                </div> 
-
-
-                <div className="  flex-auto mb-2 w-full p-2  text-center text[red]">
-                    {/* <h1 className="border-b-[.5px] border-[#030303] flex-none pl-3 text-2xl py-8 font-black tracking-wide">.｡.:*☆ f𝓐q.｡.:*☆</h1> */}
-                    {faqComponents}
-                </div> 
+                    <div className=" flex-auto mb-2 w-full  text[red]">
+                                <h1 className={styles.crytext2mobile}>f𝓐q</h1>
+                                {/* {faqComponents} */}
+                            </div> 
 
 
+                            <div className="  flex-auto mb-2 w-full  text[red]">
+                                {/* <h1 className="border-b-[.5px] border-[#030303] flex-none pl-3 text-2xl py-8 font-black tracking-wide">.｡.:*☆ f𝓐q.｡.:*☆</h1> */}
+                                {faqComponents}
+                            </div> 
 
 
-        {/* <Footer></Footer> */}
+
+
+                    {/* <Footer></Footer> */}
+                        </div>
+                        
             </div>
-            
-  </div>
 
 
-  </section>
+            </section>
+        </MobileView>
 
-
-  {/* <div className={styles.test}>
-                </div> */}
-
-
-
-
-
-{/* old site */}
-
-  {/* <div className=" pt-36 flex-auto mb-2 w-full p-2  text-center text[red]">
-                    <h1 className=" flex-none pl-3 text-4xl py-8 font-black tracking-wide">.｡.:*☆ f𝓐q.｡.:*☆</h1>
-                </div> 
-
-        <section className="  z-50 w-screen font-normal text-base mx-auto px-0 ">
-      <div className=" flex border-b-[.5px] border-t-[.5px] w-screen border-[#030303] ">
-<Link  href="../videoBlogPost/our-story"><a className='  hover:bg-[#dbff00] border-l-[.5px] border-[#030303] rounded-full p-4 m-auto items-center justify-evenly  tracking-wide"'>our story</a></Link>
-<Link href="../theteam"><a className='  hover:bg-[#dbff00] border-l-[.5px] border-[#030303] rounded-full p-4 m-auto items-center justify-evenly tracking-wide"'>the team</a></Link>
-<Link href="../collaborators"><a className='  hover:bg-[#dbff00] border-l-[.5px] border-[#030303] rounded-full p-4 m-auto items-center justify-evenly  tracking-wide"'>collaborators</a></Link>
-<Link href="./"><a className='  hover:bg-[#dbff00] border-l-[.5px] border-[#030303] rounded-full p-4 m-auto items-center justify-evenly tracking-wide"'>faqs </a></Link>
-</div>
-</section> */}
+        <BrowserView>
+            <section className="h-screen relative hidden md:block">
+            {/* <img className=" w-2/6 absolute drop-shadow-[0_0px_5px_red]" src="https://i.ibb.co/Q6g7Tk0/Masturbator-White-Thick-Transparent.png" />  */}
 
 
 
 
-        {/* TEAM MEMBERS  hover:drop-shadow-[0_35px_35px_#d1b200] */}
-
-  
-
-{/* <section >
-<div >
-    border-dashed border-t-2 border-b-2 border-black
-    <div className=' font-bold text-5xl w-3/6 col-md-6 col-md-offset-3 p-5'>
-    faqs
-    </div>
-</div>
-</section> */}
-
-{/* <div className="flex-auto mb-2 w-full p-2  text-center text[red]">
-                    {faqComponents}
-                </div>  */}
+            <div className='flex h-screen'>
 
 
-{/* old */}
-        {/* <div className={`container mx-auto flex items-center   ${styles.wrapper}`}>
-            <div className={"flex-auto flex flex-col  md:flex-row items-center bg-[#ffffff] m-5  p-3 md:m-10 " + styles.shadow}>
-            <div className="flex-auto mb-2 w-full p-2  text-center text[red]">
-                    <h1 className="border-b-[.5px] border-[#030303] flex-none pl-3 text-2xl py-8 font-black tracking-wide">.｡.:*☆ f𝓐q.｡.:*☆</h1>
-                    {faqComponents}
-                </div>         
+                    <div className=' pt-36 mx-auto z-0 p-5 top-0 h-screen w-9/12 '>
+                    
+                    <img className={styles.figure} src="https://i.ibb.co/sFyFWsf/Bald.png"/>
+                    <img className={styles.figure2} src="https://i.ibb.co/Q6g7Tk0/Masturbator-White-Thick-Transparent.png" /> 
+                    {/* <Toolbar />  */}
+                    {/* <p className="text-center  font-serif font-light "> u can cry if u want to</p> */}
+
+                    <div className=" flex-auto mb-2 w-full p-2  text-center text[red]">
+                                <h1 className={styles.crytext2}>f𝓐q</h1>
+                                {/* {faqComponents} */}
+                            </div> 
+
+
+                            <div className="  flex-auto mb-2 w-full p-2  text-center text[red]">
+                                {/* <h1 className="border-b-[.5px] border-[#030303] flex-none pl-3 text-2xl py-8 font-black tracking-wide">.｡.:*☆ f𝓐q.｡.:*☆</h1> */}
+                                {faqComponents}
+                            </div> 
+
+
+
+
+                    {/* <Footer></Footer> */}
+                        </div>
+                        
             </div>
-         </div> */}
-{/* old */}
+
+
+            </section>
+        </BrowserView>
+
+
 
 <div>
               

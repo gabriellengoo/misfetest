@@ -1229,3 +1229,45 @@ border-radius: 5%;
   .links:hover{
     color: black !important;
   }
+
+
+
+  /* mobile     height: 30vh; */
+
+.rowsallmobile{
+    display: flex;
+    /* width: 98vw; */
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+}
+
+.rowsmobile {
+  display: flex;
+    flex-wrap: nowrap;
+    padding: 2vw;
+    /* width: 50%; */
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cardmobile{
+padding: 4vw;
+}
+
+.crytext2mobile{
+  color: white;
+    text-align: left;
+    font-size: 3rem;
+    line-height: normal;
+    text-shadow: 3px 3px 0 #0000006e, -1px -1px 0 #000000a1, 1px -1px 0 #000000a6, -1px 1px 0 #000000cf, 1px 1px 0 #000000a6;
+    padding: 0;
+    }
+
+    .crytextmobile{
+  color: white;
+    text-align: left;
+    font-size: 2.6rem;
+    line-height: normal;
+    text-shadow: 3px 3px 0 #0000006e, -1px -1px 0 #000000a1, 1px -1px 0 #000000a6, -1px 1px 0 #000000cf, 1px 1px 0 #000000a6;
+    padding: 0;
+    }

@@ -8,9 +8,20 @@ import Link from 'next/link';
 import Layout from "../components/Layout";
 import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
 import { browserName, CustomView } from "react-device-detect";
+import { Dialog } from '@headlessui/react'
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+
+
+
+const navigation = [
+  { name: 'Product', href: '#' },
+  { name: 'Features', href: '#' },
+  { name: 'Marketplace', href: '#' },
+  { name: 'Company', href: '#' },
+]
 
 export default function FirstPost() {
-
+    const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   // const [data, setData] = useState(null)
   // const [isLoading, setLoading] = useState(false)
 
@@ -42,61 +53,119 @@ export default function FirstPost() {
       </Head>
 
       <MobileView>
-        <div className='px-6 pt-6 lg:px-8'>
-        <h1 className="text-4xl font-bold tracking-tight sm:text-center sm:text-6xl">We are currently in development for mobile :(</h1>
-        <p className="mt-6 text-lg leading-8 text-gray-600 sm:text-center">Please view on desktop</p>   
-          </div>  
+      <div className={styles.das}>
+    <div className="isolate">
+    <Toolbar /> 
+      <main>
+        <div className="relative px-6 lg:px-8">
+          <div className="mx-auto max-w-3xl pt-20 pb-32 sm:pt-48 sm:pb-40">
+          
+          <div>
+          {/* backgroud */}
+                <div className='flex justify-center'>
+                <img className={styles.swerldasmobile} src="https://i.ibb.co/ZR9zG0V/Miserymeets09-29-Family.png" /> 
+                </div>
+
+                {/* <div className={styles.imageright}>
+                    <img className={styles.decorimage} src="https://i.ibb.co/sFyFWsf/Bald.png" data-spai="1" data-spai-upd="389"/>
+                </div> */}
+            
+                <div className={styles.imageleft}>
+                    {/* <img className={styles.decorimage} src="https://i.ibb.co/JyJxKXh/Esther-copy-2-Glow.png" data-spai="1" data-spai-upd="200"/> */}
+                    <img className={styles.decorimage} src="https://i.ibb.co/TKVh7wG/Misery-Meets-Confidence-11-24-2020-1.png" data-spai="1" data-spai-upd="200"/>
+                </div>
+
+                <div className={styles.imageleft2mobile}>
+                    <img className={styles.decorimage} src="https://i.ibb.co/VvxBzzg/Misery-Meets2square.png" data-spai="1" data-spai-upd="200"/>
+                </div> 
+
+
+
+                {/* <div className={styles.imageright2}>
+                    <img className={styles.decorimage} src="https://i.ibb.co/dbzp5KC/Cloud-tilt-right.png" data-spai="1" data-spai-upd="389"/>
+                </div> */}
+            
+                <div className={styles.imageleft3mobile}>
+                    <img className={styles.decorimage} src="https://i.ibb.co/V9vkXv8/Grinch-main.png" data-spai="1" data-spai-upd="200"/>
+                </div>
+
+                {/* <div className={styles.imageleft22}>
+                    <img className={styles.decorimage} src="https://i.ibb.co/7kdqWNg/Plant-Body.png" data-spai="1" data-spai-upd="200"/>
+                </div>  */}
+
+
+          <div>
+          {/* big logo */}
+                <div className='flex justify-center'>
+                <img className="h-20" src="https://i.ibb.co/GJvJYg3/misery-logo-1-min.png" alt="" />
+                </div>
+
+          {/* bottom poem */}
+            <div className='text-center overflow-scroll h-screen mx-auto px-0 justify-center'>
+            <p className="mt-6 text-lg leading-8 text-black sm:text-center">
+                            misery is...
+                            </p>
+                    <p className="mt-6 text-lg leading-8 text-[#676561] mix-blend-difference sm:text-center">
+                            {/* bottom poem */}
+                    <p>*•̩̩͙✩•̩̩͙*</p>
+                    <p className='  drop-shadow-[1rem_1rem_1rem_red]   p-7 m-auto duration-1000  '>crying at the party </p>
+                    <p>*•̩̩͙✩•̩̩͙*</p>
+                    <p className='  drop-shadow-[1rem_1rem_1rem_red]  p-7  duration-1000 '> your emotional support stuffed animal that looks more depressed than you do</p>
+                    <p>*•̩̩͙✩•̩̩͙*</p>
+                    <p className='  drop-shadow-[1rem_1rem_1rem_red]  p-7  duration-1000 '>being a fag and a dyke at the same time</p>
+                    <p>*•̩̩͙✩•̩̩͙*</p>
+                    <p className='  drop-shadow-[1rem_1rem_1rem_red]  p-7  duration-1000 '>a 4 hour bath and a 7 day free trial </p>
+                    <p>*•̩̩͙✩•̩̩͙*</p>
+                    <p className='  drop-shadow-[1rem_1rem_1rem_red]  p-7  duration-1000 '>that one piece of butt hair the beautician forgot about</p>
+                    <p>*•̩̩͙✩•̩̩͙*</p>
+                    <p className='  drop-shadow-[1rem_1rem_1rem_red]  p-7  duration-1000 '>waxing your butt in the first place </p>
+                    <p>*•̩̩͙✩•̩̩͙*</p>
+                    <p className='  drop-shadow-[1rem_1rem_1rem_red]  p-7  duration-1000 '>living in your overdraft but eating out anyway </p>
+                    <p>*•̩̩͙✩•̩̩͙*</p>
+                    <p className='  drop-shadow-[1rem_1rem_1rem_red]  p-7  duration-1000 '>searching for a halal photo to send nani ji</p>
+                    <p>*•̩̩͙✩•̩̩͙*</p>
+                    <p className='  drop-shadow-[1rem_1rem_1rem_red]  p-7  duration-1000 '>putting your headphones in at the back of the cab but not even listening to anything you just don’t want to chat </p>
+                    <p>*•̩̩͙✩•̩̩͙*</p>
+                    <p className='  drop-shadow-[1rem_1rem_1rem_red]  p-7  duration-1000 '>forgiving your younger self for the things they did to get you here </p>
+                    <p>*•̩̩͙✩•̩̩͙*</p>
+                    <p className='  drop-shadow-[1rem_1rem_1rem_red]  p-7  duration-1000 '>your second hand binder </p>
+                    <p>*•̩̩͙✩•̩̩͙*</p>
+                    <p className='  drop-shadow-[1rem_1rem_1rem_red]  p-7  duration-1000 '>falling in love with your therapist </p>
+                    <p>*•̩̩͙✩•̩̩͙*</p>
+                    <p className='  drop-shadow-[1rem_1rem_1rem_red]  p-7  duration-1000 '>this too shall pass</p>
+                    <p>*•̩̩͙✩•̩̩͙*</p>
+                    <p className='  drop-shadow-[1rem_1rem_1rem_red]  p-7  duration-1000 '>freedom is sorrow is moments of connection is dissociation is remembering is moving through </p>
+                    <p>*•̩̩͙✩•̩̩͙*</p>
+                    <p className='  drop-shadow-[1rem_1rem_1rem_red]  p-7  duration-1000 '>company</p>
+                    <p>*•̩̩͙✩•̩̩͙*</p>
+                    <p className=' drop-shadow-[1rem_1rem_1rem_red]  p-7  duration-1000  '><i>me and you</i></p>
+                    <p>*•̩̩͙✩•̩̩͙*</p>
+                    <p className=' p-20 '></p>
+                  </p>
+            </div>
+          
+
+          
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    </div>
       </MobileView>
 
 
       <BrowserView> 
       {/* <Scene3 className="canvas3d"></Scene3> */}
 <div className={styles.das}>
-   
-    
-      {/* <Link  href="./"><img className="z-50 text-center items-center m-auto w-5/12 hover:w-7/12 duration-500 drop-shadow-[0_0px_5px_#c21b9e] " src="https://i.ibb.co/6yR3mjn/misery-world-glitter.png"/></Link>
-<Link  href="./Miserysite"><img className="z-50 text-center pb-20 items-center m-auto w-5/12 hover:w-7/12 duration-500 drop-shadow-[0_0px_5px_#c21b9e] " src="https://i.ibb.co/bQ4n39B/misery-site-slime.png"/></Link>
-     */}
 
-{/* -bottom-20  style="width: 100vw; height: 100vh;" className={styles.das}*/}
-
-
-{/* <div id="myCanvas" className={styles.myCanvas}>
-      <canvas id="defaultCanvas0" className={styles.p5Canvas} >
-      </canvas>
-    </div> */}
-
-{/* <Link  href="./Miserysite"><img className=" overflow-hidden z-50 absolute right-0   p-10  w-4/12 hover:w-5/12 duration-500 hover: drop-shadow-[1rem_1rem_1rem_yellow]" src="https://i.ibb.co/bQ4n39B/misery-site-slime.png"/></Link> */}
-{/* <img className={styles.figuredas} src="https://i.ibb.co/sFyFWsf/Bald.png"/> */}
-
-
-{/* <img className={styles.logomis} src="https://i.ibb.co/qB2YqyQ/MISERY-FAUX-FUR.png"/> */}
-
-{/* <div className={styles.rotate}>
-  <div className=' m-auto flex text-center  mx-auto px-0 '>
-<Image
-        src={mypic}
-        width="350px"
-        height="350px"
-    />
-</div>
-</div>  */}
-
-{/* <div  className=' blur flex h-screen mx-auto px-0  '>
-    <div className={styles.logoaa}>
-  <img className={styles.swerl} src="https://i.ibb.co/ZR9zG0V/Miserymeets09-29-Family.png" /> 
-  <img className={styles.swerl1} src="https://i.ibb.co/ZR9zG0V/Miserymeets09-29-Family.png" /> 
-  <img className={styles.swerl2} src="https://i.ibb.co/ZR9zG0V/Miserymeets09-29-Family.png" /> 
-  </div>
-  </div> */}
-
-
-{/* middle logo */}
 <div>
-{/* <img  className={styles.logomis} src="https://i.ibb.co/qB2YqyQ/MISERY-FAUX-FUR.png"/> */}
 <img  className={styles.logomis} src="https://i.ibb.co/GJvJYg3/misery-logo-1-min.png"/>
 <div className={styles.logomisbot}>
 <p><i>misery is...</i></p></div>
+
+
 
 </div>
 
@@ -173,7 +242,7 @@ export default function FirstPost() {
       <p className=' text-[#1fd705] ml-0 text-9xl hover:ml-9 duration-1000 drop-shadow-[1rem_1rem_1rem_yellow] '><i>me and you</i></p>
       <p className=' p-10 '></p>
     </p>
-</section>
+      </section>
     
 
 

@@ -10,6 +10,8 @@ import Link from "next/link"
 import Footer from '../../components/Footer';
 import Head from 'next/head';
 import CarouselComponent from "../../components/carousel";
+import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
+import { browserName, CustomView } from "react-device-detect";
 
 export const eventsMiseryMoods = ({ name, phonetextsupport, inperson, communitiesUk, communitiesGlobal, housing, images }) => {
     
@@ -52,6 +54,83 @@ export const eventsMiseryMoods = ({ name, phonetextsupport, inperson, communitie
       <Toolbar /> 
 
 
+
+      <MobileView>
+        {/* className={styles.main} className={styles.links} */}
+      <div>
+
+          <div className=' pt-2 text-left text-4xl  relative '>
+            <h1 className={styles.crytext2mobile}>{name}</h1>
+            <p className='  font-normal text-xl'>
+                misery has 5 main strands of work and we dip into, enrich and expand each one depending on our mood and what we feel us and our community really needs at a given time. 
+            </p>
+          </div>
+
+          <div>
+                <div className=" font-normal text-3xl px-0 ">
+                    <div className="  ">
+                      <Link  href="#miseryparty">☆ misery party ☆</Link>
+                      <Link href="#miserymoves">☆ misery moves ☆</Link>
+                      <Link href="#miserymeets">☆ misery meets ☆</Link>
+                      <Link href="#miserymedicine">☆ misery medicine ☆</Link>
+                      <Link href="#miserymakes">☆ misery makes ☆</Link>
+                    </div>
+                </div>
+          </div>
+
+
+
+{/* secetions */}
+        <section id="miseryparty" className=' justify-center m-auto font-normal reletive flex  z-50 '>
+           <div className='text-left'>
+                    <h1 className='  py-3 font-black text-3xl tracking-wide'>misery party (u can cry if u want 2) -</h1>
+
+                  <div className={styles.column}>
+            <div className={styles.subimagessection}>
+            <CarouselComponent images={images} />
+                  </div>
+            </div>
+
+          <BlockContent blocks={phonetextsupport} />
+        </div>
+        </section>
+ 
+
+        <section id="miserymoves" className=' justify-center  reletive flex    z-50 '>
+        <div className='text-left'>
+        <h1 className='  py-3 font-black text-3xl tracking-wide'>misery moves</h1>
+          <BlockContent blocks={inperson} />
+        </div>
+        </section>
+
+        <section id="miserymeets"  className=' justify-center  reletive flex   z-50 '>
+        <div className='text-left'>
+        <h1 className='  py-3 font-black text-3xl tracking-wide'>misery meets</h1>
+        <BlockContent blocks={communitiesUk} />
+        </div>
+        </section>
+
+        <section id="miserymedicine"  className=' justify-center  reletive flex     z-50  '>
+        <div className='text-left'>
+        <h1 className='  py-3 font-black text-3xl tracking-wide'>misery medicine</h1>
+        <BlockContent className={styles.body} blocks={communitiesGlobal} />
+                </div>
+        </section>
+  
+        <section id="miserymakes"  className=' justify-center  reletive flex    z-50  '>
+        <div className='text-left'>
+        <h1 className='  py-3 font-black text-3xl tracking-wide'>misery makes</h1>
+        <BlockContent className={styles.body} blocks={housing} />                </div>
+        </section>
+
+
+      </div>
+      </MobileView>
+
+
+
+
+      <BrowserView>
       {/* <Toolbar /> */}
       <div className={styles.main}>
  
@@ -153,9 +232,6 @@ misery has 5 main strands of work and we dip into, enrich and expand each one de
                 </div>
         </section>
   
-
-
-
         <section id="miserymakes"  className=' justify-center  reletive flex   px-8  z-50  '>
         <div className='text-left'>
         <h1 className='  py-8 font-black text-3xl tracking-wide'>misery makes</h1>
@@ -170,7 +246,7 @@ misery has 5 main strands of work and we dip into, enrich and expand each one de
       )} */}
 
       </div>
-
+      </BrowserView>
 
       {/* <Footer></Footer>  */}
     </div>

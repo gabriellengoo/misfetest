@@ -386,3 +386,28 @@ color: grey;
               transform: rotate(-2deg);
           }
           }
+
+
+/* mobile     height: 30vh; */
+
+.crytext2mobile{
+  color: white;
+    text-align: left;
+    font-size: 3rem;
+    line-height: normal;
+    text-shadow: 3px 3px 0 #0000006e, -1px -1px 0 #000000a1, 1px -1px 0 #000000a6, -1px 1px 0 #000000cf, 1px 1px 0 #000000a6;
+    padding: 0;
+    }
+
+    .crytextmobile{
+  color: white;
+    text-align: left;
+    font-size: 3rem;
+    line-height: normal;
+    text-shadow: 3px 3px 0 #0000006e, -1px -1px 0 #000000a1, 1px -1px 0 #000000a6, -1px 1px 0 #000000cf, 1px 1px 0 #000000a6;
+    padding: 0;
+    }
+
+    .subimagessection div{
+      height: 30vh !important;
+    }

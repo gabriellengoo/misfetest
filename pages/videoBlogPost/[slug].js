@@ -6,6 +6,8 @@ import { Toolbar } from '../../components/toolbar';
 import Footer from '../../components/Footer';
 import Link from 'next/link';
 import Head from 'next/head';
+import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
+import { browserName, CustomView } from "react-device-detect";
  
 // bodytwo, bodythree, bodyfour, bodyfive, bodysix,bodyseven, bodyeight,
 export const videoBlogPost = ({ name, body, summary, url, image}) => {
@@ -29,6 +31,27 @@ export const videoBlogPost = ({ name, body, summary, url, image}) => {
 
       <Toolbar />
       
+      <MobileView>
+      <section>
+
+      <p className={styles.crytextmobile}> our story </p> 
+      <div>
+          <p className="  text-left text-4xl font-['Helvetica Neue LT'] leading-none font-medium "> ok so here's the story so far </p> 
+      </div>
+
+        <div>
+          <p className="  text-left text-xl font-['Helvetica Neue LT'] leading-snug  ">  <BlockContent blocks={body} /> </p> 
+        </div>
+
+        <div className=' w-[98vw] h-auto  mx-auto pt-5 '>
+          <iframe className='  mx-auto' src="https://www.youtube.com/embed/5TY_VbQXlkU" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+        </div>          
+
+      </section>
+      </MobileView>
+
+
+      <BrowserView>
       <section className="h-screen relative hidden md:block">
 {/* <img className=" w-2/6 absolute drop-shadow-[0_0px_5px_red]" src="https://i.ibb.co/Q6g7Tk0/Masturbator-White-Thick-Transparent.png" />  */}
 
@@ -38,13 +61,7 @@ export const videoBlogPost = ({ name, body, summary, url, image}) => {
   <div className='flex h-screen'>
 
 
- {/* --------------------------------------------  right */}
- 
 
-
-  
-
-{/* -------------------------------------------- left */}
         <div className=' pt-36 z-0 p-5 top-0 mx-auto h-screen w-9/12 overflow-scroll'>
           
         <img className={styles.figure} src="https://i.ibb.co/sFyFWsf/Bald.png"/>
@@ -73,7 +90,7 @@ export const videoBlogPost = ({ name, body, summary, url, image}) => {
 
 
   </section>
-
+  </BrowserView>
   
       {/* <Footer></Footer>  */}
      </div>
