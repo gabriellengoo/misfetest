@@ -59,7 +59,9 @@ export const Toolbar = () => {
                   onClick={() => setMobileMenuOpen(true)}
                 >
                   <span className="sr-only">Open main menu</span>
-                    <div class="cta cta_menu" data-close="Close" data-menu="Menu" ndx--menu="Menu" ndx--close="Close">
+                    {/* <div clasName="cta cta_menu" data-close="Close" data-menu="Menu" ndx--menu="Menu" ndx--close="Close"> */}
+                    <div clasName="cta cta_menu" data-close="Close" data-menu="Menu">
+
                     <span>Menu</span>
               </div>
                 {/* <Bars3Icon className="h-6 w-6" aria-hidden="true" /> */}

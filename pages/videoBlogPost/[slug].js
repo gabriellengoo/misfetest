@@ -36,7 +36,7 @@ export const videoBlogPost = ({ name, body, summary, url, image}) => {
 
       <p className={styles.crytextmobile}> our story </p> 
       <div>
-          <p className="  text-left text-4xl font-['Helvetica Neue LT'] leading-none font-medium "> ok so here's the story so far </p> 
+          <p className="  text-left text-4xl font-['Helvetica Neue LT'] leading-none font-medium "> ok so here&apos;s the story so far </p> 
       </div>
 
         <div>
