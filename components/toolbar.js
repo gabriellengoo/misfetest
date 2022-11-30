@@ -60,7 +60,7 @@ export const Toolbar = () => {
                 >
                   <span className="sr-only">Open main menu</span>
                     {/* <div clasName="cta cta_menu" data-close="Close" data-menu="Menu" ndx--menu="Menu" ndx--close="Close"> */}
-                    <div clasName="cta cta_menu" data-close="Close" data-menu="Menu">
+                    <div className="cta cta_menu" data-close="Close" data-menu="Menu">
 
                     <span>Menu</span>
               </div>
