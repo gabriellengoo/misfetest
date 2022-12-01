@@ -71,10 +71,13 @@ donate
 	</Typography>
 	<Typography align="center" padding={0} color="common.black">
 	<div className="font-light">
-		Built by <MuiNextLink sx={{ textDecoration: "none", color: "common.black" }} href="https://www.instagram.com/is_this_gabrielle/"  rel="noopener noreferrer" >
-		The internet architect
-		
-		</MuiNextLink> 🔗</div>
+		built by <MuiNextLink sx={{ textDecoration: "none", color: "common.black" }} href="https://www.instagram.com/is_this_gabrielle/"  rel="noopener noreferrer" >
+		the internet architect - 
+		</MuiNextLink> 🔗 illustrations by <MuiNextLink sx={{ textDecoration: "none", color: "common.black" }} href="https://www.instagram.com/wonton.titties/"  rel="noopener noreferrer" >
+		@wonton.titti - 🔗 </MuiNextLink>
+		 titles by <MuiNextLink sx={{ textDecoration: "none", color: "common.black" }} href="https://www.instagram.com/firpal/"  rel="noopener noreferrer" >
+		@firpal 🔗</MuiNextLink> 
+		</div>
 	</Typography>
 </Box>
 </div>)
