@@ -336,7 +336,7 @@ export const Pressp = ({ title, bodyfirst , bodypanels,  body, bodytwo,
       </BrowserView>
 
 
-
+      <Footer></Footer> 
       
 
 

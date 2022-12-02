@@ -468,7 +468,7 @@ export const Resourcesp = ({ title, phonetextsupport, inperson, communitiesUk, c
                         </section>
       </BrowserView> 
     
- 
+      <Footer></Footer> 
     </div>
   
   );

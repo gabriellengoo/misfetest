@@ -146,6 +146,7 @@ export default function Index() {
 <div>
               
                 </div> 
+                <Footer></Footer> 
     {/* <FooterComponent></FooterComponent> */}
  
     </div>

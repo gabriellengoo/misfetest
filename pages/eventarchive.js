@@ -164,7 +164,7 @@ export default function Home({ posts }) {
 
 
 
-  {/* <Footer></Footer> */}
+  <Footer></Footer>
 
 
     </div>

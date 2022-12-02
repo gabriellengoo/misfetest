@@ -302,7 +302,7 @@ export const Crisisp = ({ title, phonetextsupport, inperson, communitiesUk, comm
         </section>
       </BrowserView> 
 
-
+      <Footer></Footer> 
   
     </div>
   );

@@ -140,7 +140,7 @@ we love and work with regularly.
 </div>
 
 
-{/* <Footer></Footer> */}
+<Footer></Footer>
     </div>
 
 </section>
@@ -261,7 +261,7 @@ we love and work with regularly.
       </div>
 
 
-      {/* <Footer></Footer> */}
+      <Footer></Footer>
           </div>
 
       </section>

@@ -92,7 +92,7 @@ export const videoBlogPost = ({ name, body, summary, url, image}) => {
   </section>
   </BrowserView>
   
-      {/* <Footer></Footer>  */}
+      <Footer></Footer> 
      </div>
 
     

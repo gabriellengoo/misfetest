@@ -137,7 +137,7 @@ const MAILCHIMP_URL = process.env.NEXT_PUBLIC_MAILCHIMP_URL;
       </div>
 
 
-{/* <Footer></Footer> */}
+<Footer></Footer>
 
   </div>
   </section>

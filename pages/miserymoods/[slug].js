@@ -248,7 +248,7 @@ misery has 5 main strands of work and we dip into, enrich and expand each one de
       </div>
       </BrowserView>
 
-      {/* <Footer></Footer>  */}
+      <Footer></Footer> 
     </div>
   );
 };

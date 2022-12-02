@@ -90,7 +90,7 @@ export default function Home({ posts }) {
           )) : <>No Posts Yet</>}
         </div>
 
-       
+        <Footer></Footer> 
 
         {/* <Link href="https://www.youtube.com/watch?v=5TY_VbQXlkU"><p className="text-2xl  text-center italic pt-10 font-semibold  "> WATCH: chosen family: exploring the importance of LGBTQI+ safe spaces with Aisha Mirza </p></Link> */}
             </div>
@@ -174,7 +174,7 @@ export default function Home({ posts }) {
   </div>
   </section>
   </BrowserView>
-  {/* <Footer></Footer> */}
+  <Footer></Footer>
 
 
 

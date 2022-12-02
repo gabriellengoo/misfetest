@@ -205,7 +205,7 @@ export default function MiserySite({ posts }) {
         </section>
         </BrowserView>
 
-
+        <Footer></Footer> 
 
 
 

@@ -18,7 +18,7 @@ import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detec
 import { browserName, CustomView } from "react-device-detect";
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-
+// import Footer from '../components/Footer';
 
 
 const navigation = [
@@ -242,6 +242,8 @@ export const Toolbar = () => {
         </div>
       </div>
       </div>
+
+      {/* <Footer></Footer> */}
             {/* end of header */}
             </MobileView>
 

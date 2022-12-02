@@ -221,7 +221,7 @@ export default function Home({ posts }) {
 
       </main>
     </div>
-    {/* <Footer></Footer>  */}
+    <Footer></Footer> 
       </MobileView>
 
       {/* <CustomView condition={browserName === "Firefox"}></CustomView>  */}

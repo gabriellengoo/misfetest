@@ -31,10 +31,18 @@ home
 		<Link sx={{ textDecoration: "none", color: "common.black" }} href="../../getinvolved/get-involved"  rel="noopener noreferrer" >
 		get involved
 		</Link>
+		<Link sx={{ textDecoration: "none", color: "common.black" }} href="../../getinvolved/get-involved"  rel="noopener noreferrer" >
+donate 
+		</Link>
+		<Link sx={{ textDecoration: "none", color: "common.black" }} href="../../faq"  rel="noopener noreferrer" >
+		newsletter
+		</Link>
 </Stack>
 
 
-	<Stack padding={2} direction="row"
+
+
+<Stack padding={2} direction="row"
   divider={<Divider orientation="vertical" flexItem />}
   spacing={2} justifyContent="center"
 >
@@ -50,18 +58,6 @@ home
 
 		<TextField id="outlined-basic" label="Search" variant="outlined" color="secondary" />
 	</Stack>
-
-
-
-	<Stack padding={2} justifyContent="center" direction={{ xs: 'column', sm: 'row' }} spacing={{ xs: 1, sm: 2, md: 4 }}>
-<Link sx={{ textDecoration: "none", color: "common.black" }} href="../../getinvolved/get-involved"  rel="noopener noreferrer" >
-donate 
-		</Link>
-		<Link sx={{ textDecoration: "none", color: "common.black" }} href="../../faq"  rel="noopener noreferrer" >
-		newsletter
-		</Link>
-		
-</Stack>
 
 
 	<Typography align="center" padding={0} color="common.black">

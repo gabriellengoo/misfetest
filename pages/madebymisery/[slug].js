@@ -286,7 +286,7 @@ export const Madebymisery = ({ title, body, bodytwo,
 
 
       {/* <FooterComponent></FooterComponent> */}
-      {/* <Footer></Footer>  */}
+      <Footer></Footer> 
     </div>
   );
 };

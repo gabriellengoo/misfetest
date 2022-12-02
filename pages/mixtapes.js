@@ -190,6 +190,7 @@ export default function Home({ posts }) {
       </section>
       </BrowserView>
 
+      <Footer></Footer> 
 
     </div>
   );
