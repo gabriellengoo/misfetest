@@ -179,7 +179,7 @@ export default function FirstPost() {
 
 <div className=' p-5 flex  w-6/6 h-screen mx-auto px-0  '>
         <div className="  z-50 float-right pl-10 pt-16  w-3/12 duration-500 drop-shadow-[1rem_1rem_1rem_yellow] absolute bottom-50" >
-        <Link  href="http://hello.world.miseryparty.org/"><img className={styles.misworld}  src="https://i.ibb.co/qBjDYzY/misery-world-glitter.png"/></Link>
+        <Link  href="http://miseryworld.bythearchitect.xyz/"><img className={styles.misworld}  src="https://i.ibb.co/qBjDYzY/misery-world-glitter.png"/></Link>
         </div>
         {/* <div className=" text-8xl text-[#ef549d] overflow-hidden z-50 float-right absolute duration-500 drop-shadow-[1rem_1rem_1rem_yellow]" > ← </div> */}
 
